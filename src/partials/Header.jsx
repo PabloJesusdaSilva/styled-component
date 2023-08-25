@@ -23,8 +23,8 @@ const HeaderStore = styled.h2`
   width: 100%;
   height: 50%;
   font-size: 22px;
+  font-weight: bold;
   letter-spacing: 1px;
-
 `
 
 const Header = () => {
