@@ -33,13 +33,54 @@ const JordanCard = styled.div`
   gap: 25px 15px;
 `
 
-const JordanImg = styled.img`
+const JordanContent = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  transition: all .4s;
+  
+  :hover {
+    opacity: .6;
+  }
+`
+
+const Blur = styled.div`
+  position: absolute;
+  top: 0;
+  z-index: 5;
   width: 100%;
   height: 100%;
+  opacity: 0;
+  transition: all .3s;
+  background-color: #000;
+
+  ${JordanContent}:hover & {
+    opacity: .6;
+  }
+`
+
+const JordanImg = styled.img`
   padding: 14px;
   object-fit: cover;
   box-shadow: 0 0 6px #dbdbdb;
   background-color: #EBE9EA;
+`
+
+const JordanText = styled.h1`
+  position: absolute;
+  z-index: 7;
+  bottom: 0;
+  opacity: 0;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 1px;
+  transition: all .4s;
+  color: #FFF;
+
+  ${JordanContent}:hover & {
+    bottom: 40%;
+    opacity: 1;
+  }
 `
 
 const Card = () => {
@@ -53,14 +94,62 @@ const Card = () => {
       </Description>
 
       <JordanCard>
-        <JordanImg src={Jordan1} />
-        <JordanImg src={Jordan2} />
-        <JordanImg src={Jordan3} />
-        <JordanImg src={Jordan4} />
-        <JordanImg src={Jordan5} />
-        <JordanImg src={Jordan6} />
-        <JordanImg src={Jordan7} />
-        <JordanImg src={Jordan8} />
+        <JordanContent>
+          <JordanImg src={Jordan1} />
+          <JordanText>
+            Mid Dutch Green
+          </JordanText>
+          <Blur />
+        </JordanContent>
+        <JordanContent>
+          <JordanImg src={Jordan2} />
+          <JordanText>
+            Tropical Twist
+          </JordanText>
+          <Blur />
+        </JordanContent>
+        <JordanContent>
+          <JordanImg src={Jordan3} />
+          <JordanText>
+            Retro Hight Court
+          </JordanText>
+          <Blur />
+        </JordanContent>
+        <JordanContent>
+          <JordanImg src={Jordan4} />
+          <JordanText>
+            Mid Light Smoke
+          </JordanText>
+          <Blur />
+        </JordanContent>
+        <JordanContent>
+          <JordanImg src={Jordan5} />
+          <JordanText>
+            Mid Black Noble
+          </JordanText>
+          <Blur />
+        </JordanContent>
+        <JordanContent>
+          <JordanImg src={Jordan6} />
+          <JordanText>
+            Mid Bright Citrus
+          </JordanText>
+          <Blur />
+        </JordanContent>
+        <JordanContent>
+          <JordanImg src={Jordan7} />
+          <JordanText>
+            Mid Grey Camo
+          </JordanText>
+          <Blur />
+        </JordanContent>
+        <JordanContent>
+          <JordanImg src={Jordan8} />
+          <JordanText>
+            Mid Carbon Fiber
+          </JordanText>
+          <Blur />
+        </JordanContent>
       </JordanCard>
     </Content>
   );
