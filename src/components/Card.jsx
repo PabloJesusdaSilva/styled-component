@@ -31,6 +31,10 @@ const JordanCard = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 25px 15px;
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
 `
 
 const JordanContent = styled.div`
@@ -52,16 +56,22 @@ const Blur = styled.div`
   height: 100%;
   opacity: 0;
   transition: all .2s;
+  border-radius: 6px;
   background-color: #000;
 
   ${JordanContent}:hover & {
     opacity: .6;
+  }
+
+  @media (max-width: 480px) {
+    width: 65%;
   }
 `
 
 const JordanImg = styled.img`
   padding: 14px;
   object-fit: cover;
+  border-radius: 6px;
   box-shadow: 0 0 6px #dbdbdb;
   background-color: #EBE9EA;
 `

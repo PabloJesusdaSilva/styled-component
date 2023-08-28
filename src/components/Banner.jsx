@@ -33,6 +33,12 @@ const BannerTitle = styled.h1`
   font-size: 2.6rem;
   letter-spacing: 1px;
   color: #FFF;
+
+  @media (max-width: 480px) {
+    width: 80%;
+    top: 60px;
+    left: 30px;
+  }
 `
 
 const BannerDescription = styled.p`
@@ -45,6 +51,13 @@ const BannerDescription = styled.p`
   letter-spacing: 2px;
   line-height: 32px;
   color: #F9F9F9;
+
+  @media (max-width: 480px) {
+    width: 80%;
+    top: 170px;
+    left: 30px;
+    font-size: 0.9rem;
+  }
 `
 
 const Banner = () => {
