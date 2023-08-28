@@ -7,6 +7,7 @@ const BannerContent = styled.div`
   width: 100%;
   height: 300px;
 `
+
 const BanneImg = styled.img`
   width: 100%;
   height: 100%;
