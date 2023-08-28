@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Header from "./partials/Header";
 import Banner from "./components/Banner";
 import ShoeCard from "./components/Card"
+import Footer from "./partials/Footer"
 
 const JordanTemplate = styled.div`
   display: flex;
@@ -20,6 +21,8 @@ const App = () => {
       <JordanTemplate>
         <ShoeCard />
       </JordanTemplate>
+
+      <Footer />
     </>
   );
 }

@@ -30,13 +30,13 @@ const Description = styled.p`
 const JordanCard = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px 10px;
+  gap: 25px 15px;
 `
 
 const JordanImg = styled.img`
   width: 100%;
   height: 100%;
-  padding: 10px;
+  padding: 14px;
   object-fit: cover;
   box-shadow: 0 0 6px #dbdbdb;
   background-color: #EBE9EA;

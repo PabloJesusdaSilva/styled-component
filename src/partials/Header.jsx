@@ -5,7 +5,7 @@ const HeaderPage = styled.header`
   height: 100px;
 `
 
-const HeaderTitle = styled.h4`
+const HeaderText = styled.h4`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,9 +30,9 @@ const HeaderStore = styled.h2`
 const Header = () => {
   return (
     <HeaderPage>
-      <HeaderTitle>
+      <HeaderText>
         Ganhe R$ 10,00 de desconto no frete
-      </HeaderTitle>
+      </HeaderText>
       <HeaderStore>
         JordanShoes
       </HeaderStore>

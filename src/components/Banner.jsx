@@ -5,7 +5,7 @@ import bannerImage from "../img/banner.jpeg";
 const BannerContent = styled.div`
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 330px;
 `
 
 const BanneImg = styled.img`
