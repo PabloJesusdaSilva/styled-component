@@ -37,7 +37,7 @@ const JordanContent = styled.div`
   position: relative;
   display: flex;
   justify-content: center;
-  transition: all .4s;
+  transition: all .3s;
   
   :hover {
     opacity: .6;
@@ -51,7 +51,7 @@ const Blur = styled.div`
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: all .3s;
+  transition: all .2s;
   background-color: #000;
 
   ${JordanContent}:hover & {
@@ -74,7 +74,7 @@ const JordanText = styled.h1`
   text-align: center;
   font-size: 22px;
   letter-spacing: 1px;
-  transition: all .4s;
+  transition: all .3s;
   color: #FFF;
 
   ${JordanContent}:hover & {
